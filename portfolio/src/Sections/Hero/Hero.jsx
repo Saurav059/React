@@ -4,9 +4,14 @@ import themeIcon from '../../assets/sun.svg';
 import twitterIcon from '../../assets/twitter-light.svg';
 import githubIcon from '../../assets/github-light.svg';
 import linkedinIcon from '../../assets/linkedin-light.svg';
+import CV from '../../assets/cv.pdf'
+import { useTheme } from '../../common/ThemeContext';
 
 
 function Hero() {
+
+  const { theme, toggleTheme } = useTheme();
+
   return (
   <section id="hero" className={styles.container}>
     <div className={styles.colorModeContainer}>
@@ -37,6 +42,13 @@ function Hero() {
         <img src={linkedinIcon} alt="Linkedin icon" />
         </a>
       </span>
+      <p>Passionate Personality having a passion to contribute in the feild of    
+        modern Webpage Development</p>
+      <a href={CV} download>
+      <button className="hover">
+        Resume
+      </button>
+    </a>
     </div>
   </section>
   );
