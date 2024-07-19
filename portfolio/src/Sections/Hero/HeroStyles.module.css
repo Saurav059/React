@@ -57,4 +57,28 @@
 
 .colorModeContainer{
     position: relative;
+
 }
+.colorMode{
+    position: absolute;
+    right: 0;
+    width: 25px;
+}
+
+.colorMode:hover{
+    cursor: pointer;
+}
+
+.description{
+    max-width: 30ch;
+    align-self: center;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
